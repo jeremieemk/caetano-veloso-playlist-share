@@ -24,7 +24,7 @@ export default class MyDocument extends Document {
       <html>
         <Head>
           {/* google tags manager tracking code */}
-          <script
+          {/* <script
             dangerouslySetInnerHTML={{
               __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
                 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -32,11 +32,11 @@ export default class MyDocument extends Document {
                 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
                 })(window,document,'script','dataLayer','GTM-5F7DK2H');`,
             }}
-          />
+          /> */}
           {/* google analytics tracking code */}
           <script
             async
-            src="https://www.googletagmanager.com/gtag/js?id=UA-115969774-3"
+            src="https://www.googletagmanager.com/gtag/js?id=UA-115969774-4"
           ></script>
           <script
             dangerouslySetInnerHTML={{
@@ -44,7 +44,7 @@ export default class MyDocument extends Document {
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'UA-115969774-3');
+              gtag('config', 'UA-115969774-4');
             `,
             }}
           />
