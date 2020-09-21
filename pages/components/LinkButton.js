@@ -26,7 +26,7 @@ function LinkButton(props) {
           }
           .button-link {
             border-radius: 1rem;
-            font-family: taki;
+            font-family: cerebris;
             color: white;
             background-color: black;
             border: none;

@@ -8,12 +8,12 @@ export default function Component(props) {
     [
       "SPOTIFY",
       "/img/spotify.png",
-      "https://open.spotify.com/track/5GXDGIDBKExQB53nfWcBaz?si=u3pG2CDNQXuSDR2y_3VU3A",
+      "https://open.spotify.com/playlist/44maE5rXx5wT9qFntoW88V?si=IAM1lnCSS1yMdeqatbHCyQ",
     ],
     [
       "APPLE MUSIC",
       "/img/apple.png",
-      "https://music.apple.com/us/album/llamameya-single/1527268347",
+      "https://music.apple.com/ie/playlist/izems-100-best-caetano-veloso-songs/pl.u-KVXBk16s2meyKA",
     ],
     // [
     //   "BANDCAMP",
@@ -23,23 +23,23 @@ export default function Component(props) {
     [
       "YOUTUBE",
       "/img/youtube-small.png",
-      "https://www.youtube.com/watch?v=ZU9KGwSrkOggit add .",
+      "https://www.youtube.com/playlist?list=PLyQdDVZR1ieZ7DnhWzht-gxYRbRh3jGY5",
     ],
-    [
-      "DEEZER",
-      "/img/deezer-small.png",
-      "https://www.deezer.com/fr/album/166378242",
-    ],
+    // [
+    //   "DEEZER",
+    //   "/img/deezer-small.png",
+    //   "https://www.deezer.com/fr/album/166378242",
+    // ],
   ];
 
   return (
     <Layout title={"iZem's favourite 100 Caetano Veloso Songs"}>
       <Container>
         <div className="picture-container">
-          <img src="" alt="" />
+          <img src="/img/caetanocover.png" className="release-picture" />
         </div>
-        <h1>iZem's</h1>
-        <h2>100 BEST CAETANO VELOSO SONGS</h2>
+        {/* <h2>iZem's</h2>
+        <h1>100 BEST CAETANO VELOSO SONGS</h1> */}
 
         <div className="streaming-buttons">
           {buttonProps.map((buttonProps) => (
@@ -59,21 +59,24 @@ const Container = styled.div`
   h1,
   h2 {
     color: white;
-    font-family: taki;
+
     margin-block-start: 0;
     margin-block-end: 0;
     text-align: center;
     max-width: 95%;
   }
   h1 {
-    font-size: 2rem;
-    letter-spacing: 7px;
-    margin-top: 2rem;
+    font-family: benton-black;
+    font-size: 1.2rem;
+    line-height: 130%;
+
+    margin-bottom: 1rem;
   }
   h2 {
-    font-size: 1.3rem;
-    font-family: apercu;
-    margin-bottom: 2rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-family: benton-regular;
+    margin-bottom: 0.5rem;
   }
   width: 100%;
   height: 100vh;
@@ -90,13 +93,14 @@ const Container = styled.div`
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-bottom: 2rem;
   }
-  img {
+  .release-picture {
     height: 30rem;
     width: 30rem;
+    border: 0.2px solid white;
     max-width: 100%;
     object-fit: cover;
-    border-radius: 5px;
     @media (max-height: 640px) {
       height: 18rem;
       width: 18rem;

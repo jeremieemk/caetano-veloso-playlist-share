@@ -40,7 +40,7 @@ export default Layout;
 
 const GlobalStyle = createGlobalStyle`
 @font-face {
-  font-family: Cerebris-Sans;
+  font-family: cerebris;
   src: url("fonts/cerebris/CerebriSans-Regular.ttf");
   };
   @font-face {
@@ -52,8 +52,12 @@ const GlobalStyle = createGlobalStyle`
   src: url("fonts/apercu/bold.otf");
   };
   @font-face {
-  font-family: taki;
-  src: url("fonts/taki.otf");
+  font-family: benton-regular;
+  src: url("fonts/BentonSansRegular.otf");
+  };
+  @font-face {
+  font-family: benton-black;
+  src: url("fonts/BentonSansBlack.otf");
   };
   body {
     margin: 0;
